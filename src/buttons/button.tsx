@@ -3,10 +3,36 @@ import {TouchableOpacity,Text,StyleSheet} from 'react-native';
 import MyTheme from '../../utils/theme';
 
 interface ButtonProps {
+    /**
+     * Function to be called on button press
+     * @param void onPress
+    */
     onPress: () => void;
+
+    /**
+     * Text to be displayed on button
+     * @param string label
+    */
     label?: string;
+
+    /**
+     * Style object to customize the button body
+     * @param object style
+    */
     style?: object;
+
+    /**
+     * Boolean to set if button should be outline or filled
+     * @param bool outline
+    */
     outline?: boolean;
+
+    /**
+     * Style object to customize the button text
+     * @param object textStyle
+    */
+   textStyle?: object;
+
 }
 
 
@@ -14,14 +40,14 @@ export const FlatButton=(props:ButtonProps)=>{
     if(props.outline){
         return(
             <TouchableOpacity onPress={props.onPress} style={[styles.flatButtonOutline,props.style]}>
-                <Text>{props.label ? props.label : "Submit"}</Text>
+                <Text style={props.textStyle}>{props.label ? props.label : "Submit"}</Text>
             </TouchableOpacity>
         )
 
     }else{
         return(
             <TouchableOpacity onPress={props.onPress} style={[styles.flatButton,props.style]}>
-                <Text>{props.label ? props.label : "Submit"}</Text>
+                <Text style={props.textStyle}>{props.label ? props.label : "Submit"}</Text>
             </TouchableOpacity>
         )
     }
@@ -32,13 +58,13 @@ export const RoundButton = (props:ButtonProps) => {
     if(props.outline){
         return(
             <TouchableOpacity onPress={props.onPress} style={[styles.roundButtonOutline,props.style]}>
-                <Text>{props.label ? props.label : "Submit"}</Text>
+                <Text style={props.textStyle}>{props.label ? props.label : "Submit"}</Text>
             </TouchableOpacity>
         )   
     }else{
         return(
             <TouchableOpacity onPress={props.onPress} style={[styles.roundButton,props.style]}>
-                <Text>{props.label ? props.label : "Submit"}</Text>
+                <Text style={props.textStyle}>{props.label ? props.label : "Submit"}</Text>
             </TouchableOpacity>
         )   
     }

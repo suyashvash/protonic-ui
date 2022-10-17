@@ -1,5 +1,6 @@
-
+import React from 'react';
 import { View, Modal, StyleSheet, Text, ActivityIndicator } from 'react-native';
+import MyTheme from '../../utils/theme';
 
 interface Props {
     /**
@@ -30,6 +31,7 @@ interface Props {
 export default function LoadingModal(props:Props) {
     
     const fontFamily = props.fontFamily ? props.fontFamily : 'sans-serif';
+    const color = props.color ? props.color : MyTheme.primary;
 
     return (
         <Modal 
@@ -65,7 +67,7 @@ const styles = StyleSheet.create({
         margin: 20,
         width: 200,
         height: 70,
-        backgroundColor: "white",
+        backgroundColor: MyTheme.third,
         borderRadius: 5,
         flexDirection: 'row',
         justifyContent: 'center',

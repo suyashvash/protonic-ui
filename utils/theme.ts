@@ -51,5 +51,26 @@ if(currentMode !==null){
     MyTheme = UIThemes.light;
 }
 
+/**
+ * Returns the current theme and All avialable themes 
+*/
+export const getTheme = () => {
+    return {
+        currentTheme: MyTheme,
+        allThemes: UIThemes
+    }
+}
+
+
+/**
+ * You can use this function to change the theme colors with your own application theme colors. 
+ * Note - This function should be called before the app is rendered.
+ * @param theme Theme
+*/
+export const setTheme = (theme:Theme) => {
+    MyTheme = theme;
+}
+
+
 
 export default MyTheme;

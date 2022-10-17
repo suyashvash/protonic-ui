@@ -37,12 +37,8 @@ Then in your render method
 - Loading Modal
 - FlatButton 
 - RoundButton
+- Alert Pop up
 
-
-## Upcoming Elements
- - Alert Pop up
- - Vertically scrollable tabs 
- 
 
 
 ## Found a Bug?

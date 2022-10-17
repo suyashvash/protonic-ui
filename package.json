@@ -1,0 +1,35 @@
+{
+  "name": "protonic-ui",
+  "version": "1.0.0",
+  "description": "React Native UI Kit for mobile apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suyashvash/protonic-ui.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "loading-modal",
+    "loading-modal-react-native"
+  ],
+  "author": {
+    "name": "Suyash Vashishtha",
+    "email": "suyashvashishtha@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suyashvash/protonic-ui/issues"
+  },
+  "homepage": "https://github.com/suyashvash/protonic-ui#readme"
+}

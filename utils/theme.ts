@@ -32,6 +32,9 @@ const DarkTheme:Theme={
     text:'white'
 }
 
+/**
+ * Avialable themes
+*/
 export const UIThemes = {
     light: LightTheme,
     dark: DarkTheme,

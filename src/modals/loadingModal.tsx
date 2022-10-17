@@ -42,7 +42,7 @@ export default function LoadingModal(props:Props) {
                 
             <View style={styles.centeredView}>
                 <View style={styles.modalView}>
-                    <ActivityIndicator size="large" color={props.color} />
+                    <ActivityIndicator size="large" color={color} />
                     {props.task ?
                         <Text style={[styles.modalText,{fontFamily:fontFamily}]}>{props.task}</Text>
                         :
@@ -88,5 +88,6 @@ const styles = StyleSheet.create({
         textAlign: "center",
         fontSize: 17,
         marginLeft: 15,
+        color: MyTheme.text
     }
 });

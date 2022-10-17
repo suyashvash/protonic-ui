@@ -1,6 +1,6 @@
 {
   "name": "protonic-ui",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "React Native UI Kit for mobile apps",
   "main": "index.js",
   "scripts": {
@@ -17,10 +17,14 @@
     "react",
     "react native",
     "mobile",
+    "ui-kit",
+    "react-native-ui-kit",
     "ios",
     "android",
     "ui",
     "loading-modal",
+    "react-native-button",
+    "button-ui",
     "loading-modal-react-native"
   ],
   "author": {

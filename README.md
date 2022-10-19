@@ -38,7 +38,7 @@ Then in your render method
 - FlatButton 
 - RoundButton
 - Alert Pop up
-
+- Toast
 
 
 ## Found a Bug?
